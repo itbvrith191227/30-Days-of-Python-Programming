@@ -1,6 +1,6 @@
 🗓️ 30-Day Python Study Plan
 Week 1: Python Basics
-Day 1 → Variables, Data Types, Print ✅ (today)
+Day 1 → Variables, Data Types, Print 
 Day 2 → Input from user, Basic Operators
 Day 3 → Strings (indexing, slicing, methods)
 Day 4 → Numbers & Math functions
