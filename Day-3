@@ -1,3 +1,4 @@
+STRINGS
 ->Indexing & Slicing methods
 ->string is a sequence of characters inside quotes (' ' or " ")
 ex:- name = "Python"
