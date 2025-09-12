@@ -1,0 +1,30 @@
+NUMBERS AND MATH FUNCTIONS
+->python can handle diff tyoes of numbers like int(+ve, -ve, 0), float(decimal nums), complex where complex nums are used for advanced math(2+3j etc)
+* Python in-built Math functions:
+x = -7
+y = 3.14159
+print(abs(x))        # 7 (absolute value)
+print(round(y, 2))   # 3.14 (rounding)
+print(pow(2, 3))     # 8 (2^3)
+print(max(10, 20, 30))  # 30
+print(min(10, 20, 30))  # 10
+* python has Math library fro more adv functions:
+import math
+print(math.sqrt(16))     # 4.0
+print(math.factorial(5)) # 120
+print(math.ceil(3.4))    # 4 (round up)
+print(math.floor(3.9))   # 3 (round down)
+print(math.pi)           # 3.141592653589793
+***Practise***
+1)Ask the user for any number and print: Absolute value,Square root,Cube(number³).
+import math
+n = 5
+print(abs(n)) o/p=> 5
+print(math.sqrt(n)) o/p=> 2.23
+print(pow(n,3)) o/p=> 125
+2)Write a program that takes 3 numbers from the user and prints the largest and smallest.
+a=10
+b=8
+c=12
+print(max(10,8,12)) => 12
+print(min(10,8,12)) => 8
