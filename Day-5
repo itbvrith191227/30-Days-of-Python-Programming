@@ -1,1 +1,38 @@
-BOOLEANS & COMPARISON OPERATORS
+__BOOLEANS & COMPARISON OPERATORS__
+*Boolean
+-> bool can only be two types; True(T) or False(F)
+ex:- is_sunny = True
+     is_raining = False
+    print(is_sunny)
+*Comparison Operators - returns true or false
+  |__:- ==, !=, >=, <=, >, <
+| Operator | Meaning                  | Example  | Result |
+| -------- | ------------------------ | -------- | ------ |
+| `==`     | Equal to                 | `5 == 5` | True   |
+| `!=`     | Not equal to             | `5 != 3` | True   |
+| `>`      | Greater than             | `5 > 3`  | True   |
+| `<`      | Less than                | `5 < 3`  | False  |
+| `>=`     | Greater than or equal to | `5 >= 5` | True   |
+| `<=`     | Less than or equal to    | `3 <= 5` | True   |
+ex:- a=5
+     b=-2
+  print(a==b) -> F
+  print(a<b)  -> F
+  print(a>b)  -> T
+*Logical Operators - are used to combine the conditions.
+=> A | B | T/F
+   T | T |  T  --> AND
+   T | F |  F  --> OR
+NOT - reverses the condition
+ex:- a = 7
+print(a > 2 and a < 10) => True
+print(a > 2 or a < 3)   => True
+print(not(a > 2))       => False
+***Practise***
+1) Compare two numbers (equal, greater, smaller).
+=> a=13
+   b=15
+print(a == b) -> F
+print(a > b)  -> F
+print(a < b)  -> T
+2) Age check (18 or older).
