@@ -1,0 +1,24 @@
+INPUT FROM USER
+we use input() function to get data from the user
+ex:- name = input("Enter your name: ")
+     print("Hello,", name)
+o/p:- Enter your name: Shravya
+      Hello, Shravya
+BASIC OPERATORS in python are 
+| Operator | Meaning                      | Example  | Result |
+| -------- | ---------------------------- | -------- | ------ |
+| `+`      | Addition                     | `5 + 2`  | `7`    |
+| `-`      | Subtraction                  | `5 - 2`  | `3`    |
+| `*`      | Multiplication               | `5 * 2`  | `10`   |
+| `/`      | Division (float)             | `5 / 2`  | `2.5`  |
+| `//`     | Floor Division (no decimals) | `5 // 2` | `2`    |
+| `%`      | Modulus (remainder)          | `5 % 2`  | `1`    |
+| `**`     | Exponent (power)             | `5 ** 2` | `25`   |
+***PRACTISE***
+1)Write a program that asks the user for two numbers and prints their sum.
+a=int(input("Enter first number:"))
+b=int(input("Enter second number:"))
+print("The sum is:",a+b)
+o/p:- Enter first number: 2
+      Enter second number: 3
+      The sum is 5
