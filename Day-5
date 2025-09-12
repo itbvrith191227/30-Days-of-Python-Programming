@@ -36,3 +36,5 @@ print(a == b) -> F
 print(a > b)  -> F
 print(a < b)  -> T
 2) Age check (18 or older).
+age=int(input())
+print(age>=18)  => True if 18 or older
