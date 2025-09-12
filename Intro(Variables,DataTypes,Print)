@@ -1,0 +1,24 @@
+Python is a high-level, beginner-friendly programming language. It has Simple syntax (easy to read/write),Large community,Huge number of libraries
+Variable in python is like a container which stores data. syntax:- variable_name = value
+ex: name = "Alice"
+    age = 20
+    height = 5.6
+Datatypes are int,float,str,bool
+ex: x = 10 
+    y = 3.5      
+    z = "Hello"   
+    flag = True
+#printing the output -- print() function
+ex:- print("Hello, World!")
+     print("My name is Alice")
+     print("I am", age, "years old")  # printing variables
+o/p:-Hello, World!
+     My name is Alice
+     I am 20 years old
+***PRACTISE***
+1)Create 3 variables: your name, your age, and your favorite colorPrint them in a sentence like: "My name is ___, I am ___ years old, and my favorite color is ___."
+name="Shravya"
+age=23
+fav_color="Black"
+print("My name is name, I am age years old, and my favorite color is fav_color.")
+o/p:- My name is shravya, I am 23 years old, and my favorite color is Black.
