@@ -1,0 +1,35 @@
+->Indexing & Slicing methods
+->string is a sequence of characters inside quotes (' ' or " ")
+ex:- name = "Python"
+     greeting = 'Hello'
+->String Indexing - Each character in a string has a position (index). Indexing starts from 0.
+ex: word = "Car"
+    print(word[0])
+o/p:- C
+->String Slicing - You can extract parts of a string using [start:end], where start in cluded and end is excluded.
+ex:- word = "Car"
+     print(word[0:2]
+o/p:- Ca
+->Strings come with helpful built-in functions like 
+text = "hello world"
+print(text.upper())     # HELLO WORLD
+print(text.lower())     # hello world
+print(text.title())     # Hello World
+print(text.replace("world", "Python"))  # hello Python
+print(len(text))        # 11 (length of string)
+->Negative Indexing: strings indexed from the end using -ve numbers
+ex:- word = c a r
+    index = 0 1 2
+    -ve = -3 -2 -1
+word[-2:] => starts at -2 i.e., ar
+***Practise***
+1)Store your name in a variable. Print;The first letter,The last letter,The middle part (slice)
+name = "Shravya"
+print("First letter:", name[0])       => S
+print("Last letter:", name[-1])       => a
+print("Middle part:", name[1:5])      => hrav
+2)Ask the user for a sentence. Print the same sentence in:UPPERCASE,lowercase,Title Case
+sentence = input("Enter a sentence: ")
+print("Uppercase:", sentence.upper()) => BVRIT HYDERABAD
+print("Lowercase:", sentence.lower()) => bvrit hyderabad
+print("Title Case:", sentence.title()) => Bvrit Hyderabad
