@@ -1,0 +1,16 @@
+__If-Else Statements__
+--> Run code if condition is True
+    else → Run code if condition is False
+    elif → Check additional conditions
+--> It uses comparison (==, >, <) and logical operators (and, or, not), Can nest(if-else in another if-else) "if" statements for more complex logic, Can write concise one-line conditions with ternary operators.
+***Practise***
+1) Write a program that asks for a number and checks if it’s positive, negative, or zero.
+num = int(input("Enter a number:"))
+if num > 0:
+    print("Positive")
+elif num < 0:
+    print("Negative")
+else:
+    print("zero")
+o/p:- Enter a number = 9
+      Positive
