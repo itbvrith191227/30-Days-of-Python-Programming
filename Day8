@@ -1,1 +1,14 @@
-
+_LOOPS_
+=>repeating the code without writing it many times.
+*while :- repeats till the condition is true
+*for :- loops over a sequence(string,list,range of nums)
+*looping through a string :- for char in "Python":
+                                print(char)
+ex:- 1-> count = 1
+         while count <= 5:
+               print("Count is:", count)
+               count += 1
+    2-> for i in range(5):
+             print("Number:", i)
+    3-> for char in "Python":
+            print(char)
