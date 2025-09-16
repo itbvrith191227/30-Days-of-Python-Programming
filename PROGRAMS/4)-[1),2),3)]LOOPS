@@ -1,0 +1,12 @@
+1)Print numbers from 1 to 10 using a while loop.
+count = 1
+while count <= 10:
+    print("count is :",count)
+    count += 1
+2)Print each character of your name using a for loop.
+name='Shravya'
+for char in name:
+    print(char)
+3)Write a loop that prints all even numbers from 2 to 20.
+for even in range(2,21,2):
+    print(even)
