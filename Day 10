@@ -1,1 +1,16 @@
-
+LISTS --> holds multiple values in one variable
+--> It is a collection of items.
+--> can be of different data types (integers, strings, floats, even other lists).
+1. Creating Lists
+--> holds multiple values in one variable
+2. Accessing Elements (Indexing)
+--> starts at 0
+--> Negative Indexing starts at -1 from the end
+3) Slicing
+--> fruits = ["apple", "banana", "cherry"]
+print(fruits[0:2]) => apple, banana
+4) Changing Elements
+--> ordered, mutable, allow duplicates.
+ex:- fruits = ["apple", "banana", "cherry"]
+     fruits[1] = "mango"
+    print(fruits) => ['apple', 'mango', 'cherry']
