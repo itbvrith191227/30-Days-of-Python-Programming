@@ -1,1 +1,42 @@
-__range() & Loop Patterns__
+__RANGE() & LOOP_PATTERNS__
+range() --> generates a sequence of nums
+range(start,stop,step)
+most commonly used in for loops
+loop patterns with range();
+i)repeating something n times
+ ex:- for i in range(5):
+           print("Hello")
+o/p:- prints Hello 5 times
+ii)summing numbers
+ex:- total = 0
+for i in range(1, 6):
+    total += i
+print("Sum =", total)
+o/p:- 15(Sum = 1+2+3+4+5+6)
+iii)printing even/odd nums
+ex:- for i in range(2, 11, 2):
+         print(i)
+o/p:- prints even nums b/w 2 to 10
+ex:- for i in range(1,10,2):
+         print(i)
+o/p:- prints odd nums b/w 1 to 10
+iv)reverse loooping
+ex:- for i in range(10,0,-1)
+          print(i)
+o/p:- prints nums 10 to 1
+v)patterns(stars/triangles)
+ex:- # Decreasing triangle
+for i in range(6, 1,-1):
+    print("*" * i)
+o/p:- *****
+      ****
+      ***
+      **
+      *
+vi)nested loops
+# Multiplication table
+for i in range(1, 6):
+    for j in range(1, 6):
+        print(i * j, end="\t")
+    print()
+o/p:- prints 5*5 table
