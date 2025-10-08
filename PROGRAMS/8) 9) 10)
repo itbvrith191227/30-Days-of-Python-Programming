@@ -1,0 +1,11 @@
+8) Create a list of 5 favorite movies and print the first and last movie.
+movies = ["Varsham", "Hi nanna", "Mismatched", "Saaho", "Darling"]
+print("First:", movies[0])
+print("Last:", movies[-1])
+9) Make a list of numbers from 1 to 10. Print only the first 3 numbers using slicing.
+numbers = [1,2,3,4,5,6,7,8,9,10]
+print(numbers[:3])
+10) Change the second item in a list of fruits to "grapes".
+fruits = ["mango","apple","pineapple","custard apple"]
+fruits[1] = "grapes"
+print(fruits)
