@@ -1,1 +1,17 @@
-
+**LIST METHODS & OPERATIONS**
+1) Adding items to the list;
+to add at end we use append()
+to add at index 1 we use insert()
+2) Removing items to the list;
+to remove by value we use remove()
+to remove the last item we use pop()
+to remove all items we use clear()
+3) Other Useful Methods --> sort() and reverse()
+sort() -- to sort in a particular order
+reverse() -- reverses the elements in the list
+* numbers = [1,7,5,3]
+* numbers.sort() --> [1,3,5,7]
+* numbers.reverse() --> [7,5,3,1]
+len(numbers) -- 4
+max(numbers) -- 7
+min(numbers) -- 1
