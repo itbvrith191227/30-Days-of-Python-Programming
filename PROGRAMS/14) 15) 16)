@@ -1,0 +1,13 @@
+14) Create a tuple with 5 colors and print the first and last.
+colors = ("black", "red", "purple", "blue", "orange")
+print(colors[0])
+print(colors[-1])
+15) Make a tuple of 3 numbers, multiply it by 3, and print the result.
+numbers = (1, 2, 3)
+print(numbers * 3)
+16) Unpack a tuple ("Python", "Java", "C++") into three variables and print each one.
+lang = ("Python", "Java", "C++")
+P,J,C = lang
+print(P)
+print(J)
+print(C)
