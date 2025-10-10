@@ -1,0 +1,20 @@
+**Sets in Python**
+--> unordered and unique collectn of elts
+--> automatically remove duplicates and are great for mathematical operations
+1. Creating a Set
+fruits = {"apple", "banana", "cherry"}
+print(fruits)
+Duplicates are ignored;
+nums = {1, 2, 2, 3, 4, 4}
+print(nums)    => {1, 2, 3, 4}
+2. Adding & Removing Elements
+--> .add()
+--> .remove() and .discard()
+3. Set Operations (Math Style!)
+print(A | B)   => Union -- all elts in A and B
+print(A & B)   => Intersection -- common elts b/w A and B
+print(A - B)   => Difference -- elts in A
+print(A ^ B)   => Symmetric difference -- except common elts
+4. Other Useful Methods
+print(len())       => number of items
+.clear()           => remove all
