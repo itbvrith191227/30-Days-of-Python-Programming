@@ -1,0 +1,15 @@
+17) Create a dictionary for a book:
+title, author, year, price
+and print each key-value pair.
+book = {"title":"Atomic Habits",
+        "author":"James Clear",
+        "year":2018, 
+        "price:":149}
+print(book)
+18) Add a new key "publisher" and remove "price".
+book["publisher"] = "Penguin"
+book.pop("price:")
+print(book)
+19) Print only the keys and only the values separately.
+print(book.keys())
+print(book.values())
