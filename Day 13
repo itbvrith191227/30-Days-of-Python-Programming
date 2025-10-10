@@ -1,0 +1,46 @@
+**Dictionaries (Key–Value Pairs)**
+--> store data in key: value pairs — like a mini database inside Python
+--> keys must be unique
+--> Keys can be of immutable types: str, int, tuple
+--> Values can be any data type (string, list, number, another dictionary, etc.)
+Dictionary SYNTAX;
+my_dict = {
+    "name":
+    "age":
+    "skills"
+}
+"name", "age", "skills" → keys
+ blanks → values
+1. Creating a Dictionary
+student = {
+    "name": "Shravya",
+    "age": 22,
+    "course": "Python"
+}
+2. Accessing Values
+print(student["name"])      => Shravya
+print(student.get("age"))   => 22
+3. Adding & Updating Items
+student["grade"] = "A"     => Add new key-value
+student["age"] = 23        => Update existing value
+print(student)
+4. Removing Items
+student.pop("course")      => removes 'course'
+del student["grade"]       => deletes 'grade'
+print(student)
+5. Looping Through a Dictionary
+for key, value in student.items():
+    print(key, ":", value)
+output:- name : Shravya
+         age : 22
+6. Useful Dictionary Methods
+student.keys()    # returns all keys
+student.values()  # returns all values
+student.items()   # returns all key-value pairs
+📊 LIST vs TUPLE vs DICTIONARY 
+| Feature   | List        | Tuple       | Dictionary         |
+| --------- | ----------- | ----------- | ------------------ |
+| Syntax    | `[]`        | `()`        | `{}`               |
+| Mutable   | ✅ Yes       | ❌ No        | ✅ Yes              |
+| Access by | Index       | Index       | Key                |
+| Example   | `[1, 2, 3]` | `(1, 2, 3)` | `{"a": 1, "b": 2}` |
