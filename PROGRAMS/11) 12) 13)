@@ -1,0 +1,21 @@
+11) Start with a list of ["red", "green", "blue"]. Add "yellow" and "black" to it.
+colors = ["red","green","blue"]
+colors.append("yellow")
+colors.append("black")
+print(colors)
+12) Remove "green" from the list.
+colors = ["red","green","blue"]
+colors.remove("green")
+print(colors)
+   OR
+colors = ["red","green","blue"]
+colors.append("yellow")
+colors.append("black")
+colors.remove("green")
+print(colors)
+13) Make a list of numbers, sort it, and print the largest & smallest.
+numbers = [18,1,77,45]
+numbers.sort()
+print(numbers)
+print(max(numbers))
+print(min(numbers))
