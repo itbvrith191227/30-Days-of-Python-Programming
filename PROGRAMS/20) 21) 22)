@@ -1,0 +1,14 @@
+20) Create a set of your 5 favorite movies.
+Try adding a duplicate and see what happens.
+movies = {"varsham", "eega", "darling", "saaho","eega","Hi nanna"}
+print(movies)
+21) Create two sets: A and B — find their union and intersection.
+A = {13,15,27,34}
+B = {15,17,29,32}
+print(A|B) => {13,15,17,27,29,32,34}
+print(A&B) => {15}
+22) Remove one item using .remove() and one using .discard().
+movies = {"varsham", "eega", "darling", "saaho","eega","Hi nanna"}
+movies.remove("eega")
+movies.discard("saaho")
+print(movies)
