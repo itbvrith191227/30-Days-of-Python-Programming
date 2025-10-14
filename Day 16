@@ -1,0 +1,54 @@
+**Functions — Basics, Parameters & Return Values**
+--> function is a block of code that performs a specific task.
+--> They make programs cleaner, easier to debug, and more powerful.
+Syntax
+def function_name():
+# code to execute
+1. Defining a Function ;
+=> def
+=> to call the function -> greet()
+ex:- def greet():
+    print("Hello, welcome to Python!")
+output:- Hello, welcome to Python!
+2. Function with Parameters ;
+--> You can send information into a function using parameters(inputs)
+ex:- def greet(name):
+    print("Hello", name, "!")
+==> Multiple Parameters;
+def add_numbers(a, b):
+    print(a + b)
+
+add_numbers(5, 3)
+add_numbers(10, 20)
+4. Return Values (Outputs);
+give back a result using  return keyword — not just print it
+ex:- def add(a, b):
+    return a + b
+
+result = add(5, 3)
+print("The sum is:", result)
+-- Difference between print() and return :-
+| Feature  | `print()`                  | `return`                              |
+| -------- | -------------------------- | ------------------------------------- |
+| Purpose  | Displays output on screen  | Sends value back to program           |
+| Example  | `print(5+3)` shows `8`     | `return 5+3` gives 8 to variable      |
+| Used for | Debugging, showing results | Further calculations, storing results |
+5. Default Parameters :- 
+--> If no value is passed, the default one is used.
+def greet(name="Guest"):
+    print("Hello", name)
+
+greet("Shravya")
+greet()  
+5. Scope of Variables :- 
+---> Variables inside a function are local to it
+ex:- x = 10
+
+def show():
+    x = 5
+    print("Inside:", x)
+
+show()
+print("Outside:", x)
+output:- inside = 5
+         outside = 10
