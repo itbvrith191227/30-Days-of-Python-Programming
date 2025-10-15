@@ -1,1 +1,31 @@
-
+**Return Values, Multiple Returns & Nested Functions**
+1. Returning a Value:-
+-->Functions can return something that you can use later
+ex-> def square(num):
+         return num ** 2
+     result = square(5)
+     print("Square is:", result)
+2. Multiple Return Values:-
+-->You can return multiple results using a tuple
+ex-> def calculate(a, b):
+        return a + b, a * b
+    sum_val, product_val = calculate(4, 5)
+    print("Sum:", sum_val)
+    print("Product:", product_val)
+3. Nested Functions:-
+--> A function inside another function is nested 
+--> It is  used for organizing logic
+ex- def outer():
+        print("Inside outer function")
+    def inner():
+        print("Inside inner function")
+    inner()
+outer()
+4. Function Calling Another Function:-
+--> Functions can reuse other functions which helps to avoid repeated code
+ex- def greet(name):
+        print("Hello", name)
+    def welcome_user(name):
+        greet(name)
+    print("Welcome to Python learning!")
+welcome_user("Shravya")
