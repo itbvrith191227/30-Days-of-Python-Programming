@@ -1,0 +1,16 @@
+23) Write a function that prints your name and branch.
+def intro():
+    print("Shravya")
+    print("IT")
+intro()
+24) Create a function that takes two numbers and prints their sum and product.
+def operations(a, b):
+    print("Sum:", a + b)
+    print("Product:", a * b)
+
+operations(1,8)
+25) Write a function is_even(num) that returns True if a number is even, else False.
+def is_even(num):
+    return num % 2 == 0
+print(is_even(6))
+print(is_even(9))
