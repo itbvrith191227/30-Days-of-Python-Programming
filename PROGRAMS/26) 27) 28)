@@ -1,0 +1,28 @@
+26) Write a function area_perimeter(length, width) that returns both area and perimeter.
+def area_perimeter(l, b):
+    a = l*b
+    p = 2*(l+b)
+    return a, p
+a,p = area_perimeter(4,5)
+print("area:",a)
+print("perimeter:",p)
+27) Create a function that checks if a number is prime.
+def is_prime(num):
+    if num <= 1:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+print(is_prime(7))   
+28) Write a nested function outer → inner that prints:
+def outer():
+    print("Outer started")
+    def inner():
+        print("inner running")
+        def outer():
+            print("outer ended")
+        outer()
+    inner()
+outer()
