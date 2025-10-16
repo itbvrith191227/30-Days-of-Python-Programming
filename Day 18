@@ -1,1 +1,41 @@
-
+**Function Arguments — Positional, Keyword, Default & Variable Length**
+--> Functions become powerful when you can pass data in different ways
+1) Positional Arguments;
+--> it is Passed in order, like, the first value goes to the first parameter, etc
+ex:- def greet(name, age):
+     print(f"Hello {name}, you are {age} years old.")
+     greet("Shravya", 21)
+2) Keyword Arguments;
+--> specifies the argument name,  order doesn’t matter
+ex:- def greet(name, age):
+     print(f"Hello {name}, you are {age} years old.")
+     greet(age=21, name="Shravya")
+3) Default Arguments
+--> can give a default value, which is used if no value is provided
+ex:- def greet(name="User"):
+     print("Hello", name)
+     greet()          # Hello User
+     greet("Shravya") # Hello Shravya
+4) Variable-Length Arguments; *args
+--> Use *args to accept multiple values
+--> *args collects all extra positional arguments into a tuple
+ex:- def add_numbers(*args):
+     total = 0
+     for num in args:
+        total += num
+    return total
+    print(add_numbers(1, 2, 3, 4))  # 10
+5) Keyword Variable-Length Arguments; **kwargs
+--> Use **kwargs to accept multiple key-value pairs
+--> **kwargs collects all keyword arguments into a dictionary
+ex:- def show_info(**kwargs):
+     for key, value in kwargs.items():
+        print(f"{key}: {value}")
+     show_info(name="Shravya", branch="IT", year=2025)
+** Combine All Together;
+ex:- def student_info(name, age=18, *subjects, **details):
+     print(f"Name: {name}")
+     print(f"Age: {age}")
+     print("Subjects:", subjects)
+     print("Details:", details)
+student_info("Shravya", 21, "Python", "Maths", city="Hyderabad", grade="A+")
