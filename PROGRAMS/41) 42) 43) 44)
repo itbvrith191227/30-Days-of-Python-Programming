@@ -1,0 +1,7 @@
+41) Create a file notes.txt and write 5 lines about your favorite topic.
+
+42) Read the file and print only lines containing a specific word.
+
+43) Append 2 more lines and read the file again.
+
+44) Try using with open(...) for all operations.
