@@ -1,0 +1,23 @@
+29) Write a function total_marks(*marks) that returns total and average.
+def total_marks(*marks):
+    total = sum(marks)
+    avg = total/len(marks)
+    return total, avg
+total, avg = total_marks(18,45,27,13)
+print("total:",total)
+print("avg:", avg)
+30) Create a function student_profile(name, **details) that prints student info (branch, year, city, etc.).
+def student_profile(name, **details):
+    print("student_name:", name)
+    for key, value in details.items():
+        print(f"{key}: {value}")
+student_profile(name="Shravya", branch="IT", year=2023, city="Hyderabad")
+31) Write a function power(base, exp=2) — default exponent should be 2.
+def power(base, exp=2):
+    return base ** exp
+print(power(5))
+32) Combine *args and **kwargs in a single example (like above).
+def combine(*args, **kwargs):
+    print("numbers:",args)
+    print("details:",kwargs)
+combine(10, 20, 30, name="Shravya", city="Hyderabad")
