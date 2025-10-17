@@ -1,0 +1,32 @@
+**Lambda, Map, Filter & Reduce**
+--> These tools help you write compact, efficient and data-friendly code 
+--> is perfect for data science and automation
+1) Lambda Functions (Anonymous Functions);
+--> it is a small one-line function without a name
+syntax:- lambda arguments: expression
+2) map() Function;
+--> map() applies a function to each element in a list (or any iterable)
+ex:- nums = [1, 2, 3, 4, 5]
+     squares = list(map(lambda x: x ** 2, nums))
+     print(squares)
+3) filter() Function;
+--> filter() selects items based on a condition (True/False)
+ex:- nums = [1, 2, 3, 4, 5, 6]
+     even_nums = list(filter(lambda x: x % 2 == 0, nums))
+     print(even_nums)
+4) reduce() Function;
+--> applies a function cumulatively to the list, combining all elements into one result
+--> You must import it from functools
+ex:- from functools import reduce
+     nums = [1, 2, 3, 4]
+     product = reduce(lambda a, b: a * b, nums)
+     print(product)
+====> to combine above all in one code<==== ;
+from functools import reduce
+nums = [1, 2, 3, 4, 5, 6]
+doubles = list(map(lambda x: x * 2, nums))
+filtered = list(filter(lambda x: x > 6, doubles))
+total = reduce(lambda a, b: a + b, filtered)
+print("Doubles:", doubles)
+print("Filtered (>6):", filtered)
+print("Total:", total)
