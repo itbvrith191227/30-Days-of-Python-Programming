@@ -1,1 +1,41 @@
-
+**File Handling in Python**
+--> allow you to read, write, and update data outside your program
+--> Python provides built-in functions to create, open, read, write, and close files
+| Mode  | Description                                         | Example                  |
+| ----- | --------------------------------------------------- | ------------------------ |
+| `'r'` | Read (default). File must exist.                    | `open('file.txt', 'r')`  |
+| `'w'` | Write. Creates a new file or overwrites existing.   | `open('file.txt', 'w')`  |
+| `'a'` | Append. Adds data at the end.                       | `open('file.txt', 'a')`  |
+| `'x'` | Create a new file. Fails if file exists.            | `open('file.txt', 'x')`  |
+| `'b'` | Binary mode. Use with other modes for binary files. | `open('file.txt', 'rb')` |
+| `'t'` | Text mode (default).                                | `open('file.txt', 'rt')` |
+1) Open a File;
+open(filename, mode)
+where filename -> name of file including path, mode-> how we wnant to open the file
+ex:- file = open("example.txt", "w")
+     file.write("Hello, Python!\n")
+     file.write("This is Day 21.\n")
+     file.close()
+2) Read a File;
+file = open("example.txt", "r")
+content = file.read()
+print(content)
+file.close()
+3) Append to a File;
+file = open("example.txt", "a")
+file.write("Appending a new line.\n")
+file.close()
+4) Read Line by Line;
+file = open("example.txt", "r")
+for line in file:
+    print(line.strip())
+file.close()
+5) Using with Statement (Recommended);
+--> it automatically closes the file after use
+with open("example.txt", "r") as file:
+    for line in file:
+        print(line.strip())
+6) Writing Multiple Lines;
+lines = ["Python\n", "File handling\n", "Day 21 practice\n"]
+with open("example.txt", "w") as file:
+    file.writelines(lines)
