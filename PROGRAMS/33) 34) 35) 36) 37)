@@ -1,0 +1,25 @@
+Use a lambda to find cube of a number.
+cube = lambda x: x ** 3
+print(cube(5))
+Use map() to convert a list of Celsius temps to Fahrenheit.
+temp_c = [0,25,35,100]
+temp_f = list(map(lambda x: (x * 9/5) + 32, temp_c))
+print(temp_f)
+Use filter() to get all names starting with “S” from a list.
+names = ["Shrav","Jakku","Shiv","Shar","Bomma","Palli"]
+names = list(filter(lambda name:name.startswith("S"), names))
+print(names)
+Use reduce() to find the maximum number in a list.
+from functools import reduce
+num = [2,8,4,10,5]
+max_num = reduce(lambda a,b:a if a > b else b, num)
+print(max_num)
+Combine all in one workflow (map → filter → reduce).
+from functools import reduce
+num = [2,4,6,8]
+squares = list(map(lambda x: x**2, num))
+filtered = list(filter(lambda x: x > 10, squares))
+total = reduce(lambda a, b: a + b, filtered)
+print("Squares:", squares)
+print("Filtered:", filtered)
+print("Total:", total)
