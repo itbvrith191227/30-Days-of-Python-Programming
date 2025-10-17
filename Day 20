@@ -1,1 +1,33 @@
 ** Modules and Packages**
+--> help organize Python code and reuse functionality without rewriting it
+1) MODULE :- It is a Python file(.py) containing functions, variables, or classes.
+Example: math, random, datetime
+ex:- import math
+     print(math.sqrt(16))  
+     print(math.factorial(5)) 
+2) Importing Specific Functions;
+ex:- from math import factorial, ceil
+     print(factorial(6))  
+     print(ceil(4.3))    
+3) Creating Your Own Module;
+--> i) by creating a file mymodule.py :- 
+def greet(name):
+    return f"Hello, {name}!"
+--> ii) using it in another file :- 
+import mymodule
+print(mymodule.greet("Shravya"))
+4) PACKAGE :- It is a folder containing multiple modules and a special __init__.py file
+--> It allows  to organize large projects
+syntax:- myproject/
+         __init__.py
+         math_utils.py
+         string_utils.py
+Usage:- from myproject import math_utils, string_utils
+5) Common Built-in Modules :-
+=> os → interact with operating system
+=> sys → system-specific parameters
+=> random → generate random numbers
+=> datetime → work with dates and times
+=> math → math operations
+ex:- import random
+     print(random.randint(1, 100))  
