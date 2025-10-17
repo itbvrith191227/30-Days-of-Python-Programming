@@ -1,0 +1,16 @@
+38) Use the random module to pick a random element from a list of your 5 favorite colors.
+import random
+colors = ["black","purple","white","red","orange"]
+colors = random.choice(colors)
+print(colors)
+39) Use the datetime module to print today’s date and current time.
+from datetime import datetime
+now = datetime.now()
+print(now)
+40) Create your own module with a function square() and use it in another file.
+mymodule.py
+def square(x):
+    return x**2
+main.py
+import mymodule
+print(mymodule.square(5))
