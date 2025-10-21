@@ -1,0 +1,33 @@
+41) Handle ZeroDivisionError when dividing two numbers input by the user.
+try:
+    num1 = int(input("Enter a number: "))
+    num2 = int(input("Enter a number: "))
+    result = num1 / num2
+except ValueError:
+    print("Invalid input! Please enter a number.")
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+42) Handle ValueError when converting input to an integer.
+try:
+    n = int(input("Enter a number: "))
+except ValueError:
+    print("Invalid input! Enter an integer.")
+else:
+    print("You entered:", n)
+43) Create a function that raises an exception if a number is negative.
+def check_positive(n):
+    if n < 0:
+        raise ValueError("Number must be non-negative")
+    return True
+
+check_positive(-5) 
+44) Use finally to print "Program Finished" no matter what.
+try:
+    n = int(input("Enter a number:"))
+    result = n / 0
+except FileNotFoundError:
+    print("Invalid input! Please enter a number.")
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+finally:
+    print("Program finished.")
