@@ -1,0 +1,36 @@
+**Exception Handling in Python**
+--> Python uses exceptions to handle errors at runtime so that program doesn’t crash
+1) Try/Except;
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+2) Catch Multiple Exceptions;
+try:
+    num = int(input("Enter a number: "))
+    result = 10 / num
+except ValueError:
+    print("Invalid input! Please enter a number.")
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+3) Using else (runs if no exception;
+try:
+    num = int(input("Enter a number: "))
+except ValueError:
+    print("Invalid input!")
+else:
+    print("You entered:", num)
+4) Using finally (runs always);
+try:
+    file = open("example.txt", "r")
+except FileNotFoundError:
+    print("File not found!")
+finally:
+    print("This block always runs.")
+5) Raising Exceptions;
+def check_age(age):
+    if age < 18:
+        raise ValueError("Age must be at least 18")
+    return True
+
+check_age(15)
