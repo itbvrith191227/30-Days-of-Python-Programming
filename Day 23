@@ -1,2 +1,22 @@
 **Classes & OOP in Python**
---> 
+--> OOPs -- Object-Oriented Programming
+--> based on the concept of objects which bundles data and functions together
+--> helps to organise code into reusable and modular parts
+KEY TERMS IN OOPs :-
+| Concept                      | Description                               | Example                      |
+| ---------------------------- | ----------------------------------------- | ---------------------------- |
+| **Class**                    | A blueprint/template for creating objects | `class Car:`                 |
+| **Object**                   | An instance of a class                    | `car1 = Car()`               |
+| **Attribute**                | Variable inside a class                   | `self.color = "Red"`         |
+| **Method**                   | Function inside a class                   | `def start(self):`           |
+| **Constructor (`__init__`)** | Special method to initialize objects      | `def __init__(self, brand):` |
+| **`self`**                   | Refers to the current object              | `self.brand = brand`         |
+FOUR PILLARS OF OOPS are ;
+1) Abstraction 
+--> hiding the unnecessary details and showing only necessary details of data
+2) Inheritance
+--> ability of one class (child) to acquire the properties and behaviors of another class (parent)
+3) Encapsulation
+--> Hiding internal details; using methods to access data
+4) Polymorphism
+--> Same function name but different behaviors
