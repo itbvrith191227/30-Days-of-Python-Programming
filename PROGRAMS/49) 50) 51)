@@ -1,0 +1,40 @@
+49) Create a Student class with name, roll_no, and marks attributes and a method to display info.
+class student:
+    def __init__(self, name, rollno, marks):
+        self.name = name
+        self.rollno = rollno
+        self.marks = marks
+    def display(self):
+        print(f"student: {self.name} {self.rollno}, {self.marks}")
+s1 = student("Shrav", 27, 300)
+s1.display()
+50) Create a Rectangle class with length and width and methods to calculate area and perimeter.
+class rectangle:
+    def __init__(self,length,breadth):
+        self.length = length
+        self.breadth = breadth
+    def perimeter(self):
+        return 2*(self.length + self.breadth)
+    def area(self):
+        return self.length * self.breadth
+r = rectangle(5,2)
+print("perimeter:", r.perimeter())
+print("area:", r.area())
+51) Demonstrate inheritance by creating a Teacher class inheriting from Person.
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        print(f"Hello, I am {self.name}")
+
+class Teacher(Person):
+    def __init__(self, name, subject):
+        super().__init__(name)
+        self.subject = subject
+
+    def display_subject(self):
+        print(f"subject: {self.subject}")
+T = Teacher("Rajasekhar","DBMS")
+T.greet()
+T.display_subject()
