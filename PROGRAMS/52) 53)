@@ -1,0 +1,27 @@
+52) Demonstrate encapsulation with a BankAccount class.
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance  
+
+    def deposit(self, amount):
+        self.__balance += amount
+
+    def get_balance(self):
+        return self.__balance
+A = BankAccount(100000)
+A.deposit(50000)
+print(A.get_balance()) 
+53) Demonstrate polymorphism with speak() for two different animal classes.
+class Tiger:
+    def speak(self):
+        print("Roar")
+class Cat:
+    def speak(self):
+        print("Meow")
+def animal_speak(animal):
+    animal.speak()
+T = Tiger()
+C = Cat()
+
+animal_speak(T)  
+animal_speak(C)  
